@@ -1,0 +1,22 @@
+{
+  "name": "webprojects",
+  "version": "1.0.0",
+  "description": "LearningWeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dmitriy9196/some-shit.git"
+  },
+  "author": "Dimas",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/Dmitriy9196/some-shit",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
