@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Dmitriy9196/some-shit",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^4.0.0-beta.3",
+    "jquery": "^3.2.1"
   }
 }
