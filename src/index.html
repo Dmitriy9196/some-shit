@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
+        <div class="form-control">
             <div class="form-group">
                 <label class="form-check-label"> Фильтр
                     <select class="form-control" name="">
@@ -19,21 +19,18 @@
                     </select>
                 </label>
                 <label class="col-form-label">Введи заметку
-                    <input type="text" class="form-control" name="noteName" value="-">
+                    <input type="text" class="form-control" name="noteName" id="input-name" value="-" autofocus>
                 </label>
                 <label class="col-form-label">Введи описание
-                    <input type="text" class="form-control" name="noteDesc" value="-">
+                    <input type="text" class="form-control" name="noteDesc" id="input-desc" value="-">
                 </label>
-                <button id="1" class="btn-primary" onclick="">Добавить заметку</button>
-                <button id="2" class="btn-danger" onclick="">Удалить заметки</button>
+                <button id="button-addNote" class="btn-primary" onclick="NoteList.addNote()">Добавить заметку</button>
+                <button id="button-delNote" class="btn-danger"onclick="NoteList.renderer()">Показать заметки</button>
             </div>
         </div>
+        <div class="list-group form-control-range">
+            <ul class="list-group" id="ul-noteList">
 
-        <div class="col-md-3">
-            <ul class="list-group">
-                <li class="list-group-item">some text
-                    <span class="form-check">some text</span>
-                </li>
             </ul>
         </div>
     </div>
