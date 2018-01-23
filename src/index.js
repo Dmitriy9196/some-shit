@@ -19,6 +19,7 @@ const NoteList = {
     }
 };
 
+
 let buttonAddNote = document.querySelector('#button-addNote');
 let buttonDelNote = document.querySelector('#button-delNote');
 buttonAddNote.addEventListener('click', NoteList.addNote());
