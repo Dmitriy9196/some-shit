@@ -25,12 +25,11 @@
                     <input type="text" class="form-control" name="noteDesc" id="input-desc" value="-">
                 </label>
                 <button id="button-addNote" class="btn-primary" onclick="NoteList.addNote()">Добавить заметку</button>
-                <button id="button-delNote" class="btn-danger" onclick="NoteList.renderer()">Показать заметки</button>
+                <button id="button-delNote" class="btn-danger" onclick="NoteList.delNote()">Удалить последнюю</button>
             </div>
         </div>
         <div class="list-group form-control-range">
             <ul class="list-group" id="ul-noteList">
-
             </ul>
         </div>
     </div>

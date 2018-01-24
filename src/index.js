@@ -1,16 +1,31 @@
 const NoteList = {
 
-    Notes: [],
+    index: 1,
 
     addNote: () => {
-        let id = NoteList.Notes.length + 1;
+        const i = NoteList.index;
+        let ul = document.querySelector('#ul-noteList');
         let noteName = document.querySelector('#input-name').value;
-        NoteList.Notes.push({name: noteName, id: id});
-        localStorage.setItem(String(id), noteName);
-        },
+        let noteDesc = document.querySelector('#input-desc').value;
+        let newNote = document.createElement('li');
+        let newNoteDesc = document.createElement('span');
+        newNote.classList.add('list-group-item');
+        newNoteDesc.classList.add('list-group-item');
+        newNote.setAttribute('id', `${i}`);
+        newNote.innerText = noteName;
+        newNoteDesc.innerText = noteDesc;
+        newNote.appendChild(newNoteDesc);
+        ul.appendChild(newNote);
+        NoteList.index += 1;
+    },
 
-    delNote: () => {},
+    delNote: () => {
+        let ul = document.querySelector('#ul-noteList');
+        let last = ul.lastChild;
+        last.remove();
+        NoteList.index -= 1;
+    },
 
-    renderer: () => {},
+//    filter: () => {}
 
 };
